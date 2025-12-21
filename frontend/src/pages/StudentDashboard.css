@@ -1,0 +1,81 @@
+.student-dashboard {
+  min-height: 100vh;
+  background-color: #f5f5f5;
+}
+
+.student-dashboard .dashboard-header {
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  color: white;
+  padding: 20px 40px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+.student-dashboard .dashboard-header h1 {
+  margin: 0;
+  font-size: 28px;
+}
+
+.student-dashboard .header-actions {
+  display: flex;
+  gap: 20px;
+  align-items: center;
+}
+
+.student-dashboard .dashboard-tabs {
+  background: white;
+  padding: 0 40px;
+  display: flex;
+  gap: 0;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
+}
+
+.student-dashboard .dashboard-tabs button {
+  background: none;
+  border: none;
+  padding: 16px 24px;
+  font-size: 16px;
+  color: #666;
+  border-bottom: 3px solid transparent;
+  transition: all 0.3s;
+}
+
+.student-dashboard .dashboard-tabs button.active {
+  color: #667eea;
+  border-bottom-color: #667eea;
+  font-weight: 600;
+}
+
+.student-dashboard .dashboard-content {
+  padding: 30px 40px;
+}
+
+.student-dashboard .dashboard-content h2 {
+  margin-bottom: 24px;
+  font-size: 24px;
+  color: #333;
+}
+
+.progress-section {
+  margin: 16px 0;
+}
+
+.progress-label {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 8px;
+  font-size: 14px;
+  color: #666;
+  font-weight: 500;
+}
+
+.progress-section .progress-bar {
+  height: 24px;
+}
+
+.progress-section .progress-bar-fill {
+  font-size: 13px;
+  font-weight: 600;
+}

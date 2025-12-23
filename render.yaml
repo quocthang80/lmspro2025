@@ -1,19 +1,17 @@
-services:
+databases:
   # PostgreSQL Database
-  - type: pserv
-    name: lmspro-database
-    env: docker
+  - name: lmspro-database
+    databaseName: lms_db
+    user: lms_user
     plan: free
     region: singapore
     ipAllowList: []
-    databases:
-      - name: lms_db
-        user: lms_user
 
+services:
   # Backend API Service
   - type: web
     name: lmspro-backend
-    env: node
+    runtime: node
     region: singapore
     plan: free
     buildCommand: cd backend && npm install
